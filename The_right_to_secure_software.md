@@ -1,4 +1,4 @@
-# The right to secure software: White paper on the social aspect of software security
+# The right to secure software: Whitepaper on the social aspect of software security
 
 ## Abstract
 
@@ -16,8 +16,6 @@ sloppy. A software vendor in the end might only suffer from a decline in sales w
 Software gets hacked every day!
 
 This paper proposes a balanced right for secure software.
-Balanced because the negative consequence for the manufacturer or provider of a specific software product is weighted
-according to the actual negative impact from a hack of their software product.
 
 ## Why do we need more than high-end security tooling and brilliant tech expertise to get software secure?
 
@@ -36,7 +34,7 @@ was not designed for.
 The most sensitive area here – because it is the potentially most harmful one – is the security of the software, which
 we intend to use. No one wants to be spied on, blackmailed or manipulated.
 
-High-end security tooling and expert security consultancy is available, but of course, they mean substancial extra
+High-end security tooling and expert security consultancy is available, but of course, they mean substantial extra
 costs.
 
 In a capitalist market order we need an effective financial incentive, so that software manufacturers and software
@@ -74,26 +72,21 @@ hack was made public.
 ### Which software vendors are we talking about?
 
 Potentially all of them as long as they sell it as a product.
-For some special cases it would probably make sense to reduce the penalties to a minimum.
-Here we see mainly freelancers and small startup companies (up to 5 employees in the first 3 years after founding)
-
-To get a clearer picture we give some examples of major relevant vendor:
+To get a clearer picture here are some examples of major relevant vendors:
 
 - Operating System vendors
-- PC software vendor
-- Phone app vendor
+- PC software and App vendors
 - Cloud service provider (liable for their pure cloud services, not for third-party software running on it)
 - Car manufacturers (which will be seen as software providers of their car's own software - even when the software was
   produced by a supplier)
 - Manufacturers of industry control systems
+- Public service software vendors, etc.
 
-This paper proposes a balanced right for secure software – balanced because the negative consequence for the
-vendor/provider of a specific software product will be measured by the estimated negative impact of each actually
-happened remote hack of their software.
+For the weakest market members (e.g. single developers and small startups in the first 3 years) we should discuss
+special rules in order to allow healthy growth.
+
 Furthermore, we should keep in mind, that also the user(s) (sometimes the provider) of a device or software service has
 responsibilities, which are essential to keep the device or service secure.
-The user (or provider) primarily is responsible for being aware what software is in use, that it is used in a
-appropriate environment and very important: the software is kept up-to-date.
 
 So we see, that even though we restrict the topic exclusively on secure (like "unbreakable") software, we already deal
 with a quite complex matter.
@@ -101,36 +94,42 @@ Nevertheless, this is a suitable scope, which should be addressed in our society
 
 ## Solution: Liable Vendors
 
+This paper proposes a balanced right for secure software – balanced because the negative consequence for the
+vendor/provider of a specific software product will be measured
+according to the negative impact of each actually happened remote hack of their software (theoretically if no insurance
+would cover).
+
+The user (respectively the service provider) has the following responsibilities:
+
+- being aware what software is in use
+- make sure each software is used in its environment, were it is designed to run
+- and most important: the software is kept up-to-date
+
 For all new issued software products, including all of it's updates,
 the vendor of that product (short: **vendor**) will be fully responsible for the harm caused by an actually conducted
 remotely exploited gap in the software he delivers with his product.
 The vendor will be liable only, when the software was **up-to-date**, no matter what the root cause of that software gap
 was (bug, mistake by design, oversight, gap in third party library, etc.)
 
-If a product falls under this vendor liability, that fact should be made visible to users and potential users.
-
-*The general idea was introduced 2003 by Bruce Schneier.*
-
 ### Up-to-dateness and outdated software
 
-Up-to-date means, that a provided automatic update mechanism and schedule from the vendor (respectively of his
+Up-to-date means here, that a provided automatic update mechanism and schedule from the vendor (respectively of his
 software supplier) was not blocked or massively delayed by the user recently, so that he was causing the outdated
 software state.
 
 An outdated software state is measured by the time period beginning from the time of the
-availability of an automated update for the users device or service (respectively the affected software component).
+availability of an automatic update for the users device or service (respectively the affected software component).
 Here we should consider enough time for the vendor to reach the user's device as well as the typical usage pattern, the
 expected uninterrupted usage of the device or service as well as the potential harm of a gap left open.
 
-We recommend to define it commonly per product class and severity level of fixed bugs. It should be reviewed and
-adjusted
-it on a yearly basis.
-According to common sense it should be typically something between 1 day and a month. Initially, before all categories
-are defined, a default time period of 2 weeks could be used instead.
+We recommend to define it commonly per product class and severity level of fixed bugs.
+It should be reviewed and adjusted on a yearly basis.
+According to common sense it should be typically something between a day and a month. Initially, before all categories
+are defined, a default time period of two weeks could be used instead.
 
 ### Insurance
 
-Insurance companies might help to cover major parts of the risks for software / product vendors here.
+Insurance companies could help to cover major parts of the risks for software / product vendors here.
 
 ### How to deal with existing software when these rules would be active?
 
@@ -151,11 +150,11 @@ He had have enough time to harden or replace it.
 ## Conclusion
 
 This paper offers a strategic solution to reduce the spread of insecure software.
-When the described solution is put into national, regional or worldwide law, over the time we expect to see a
+When the described solution is put into regional or worldwide law, over the time we expect to see a
 substantially higher level of robustness against external bad actors for all sorts of devices and services used in our
 daily live.
 
-Let's design our future that way!
+Let's design our future more secure!
 
 ## References
 
@@ -169,28 +168,27 @@ Let's design our future that way!
 ## Final thoughts
 
 Software and their devices can be compromised even easier (and also harder to harden against it), when an attacker has
-direct access to an
-internal secure network or the device hardware itself. Even though it's related from a technologically point of view,
-this paper does not discuss that area directly, because
-that are special circumstances which can be seen like an insider-attack, which has a complete different quality and
-demands a different perspective and handling.
+direct access to an internal secure network or the device hardware itself. Even though it's a related topic, this paper does not discuss that area directly, because
+that are special circumstances which can be seen like an insider-attack, which has a complete different quality and demands a different perspective and handling.
 
 ### And what about Open Source Software?
 
 That serves a different purpose. Please consider these arguments.
 
+- Open Source Software is not made public with the purpose to sell a product
 - Open Source Software is publicly available in it's source code, so one can review it or let it review by someone else.
 - Anyone with the appropriate skill can fix it
 - Furthermore, high-end static code analysis technology (SAST; Taint Analysis) becomes more and more available for major
-  programming languages
-  These tools are capable of finding major parts of remotely exploitable software gaps.
-- Open Source Software is not made public with the purpose to sell a product
+  programming languages. These tools are capable of finding major parts of remotely exploitable software gaps.
 
 ### Software quality
 
-The reader might also argue, that we should address software quality in general in such a way – and he is not wrong with
-that! But lets solve one problem at a time.
+The reader might argue, that we should address software quality in general in such a way – and he is not wrong with
+that. But lets solve one problem at a time.
 This topic is way too complex to be handled as a whole, so we're forced to focus on the potentially most harmful area
 first, which is software security.
 
-_Sept 2023, bitmagier, version 1.0_
+*At last we won't forget to mention, that the general idea, to make vendors liable for insecure software was already
+published 2003 by the internationally renowned security technologist Bruce Schneier.*
+
+_Version 1.1, Sep. 30, 2023, bitmagier_
